@@ -1,5 +1,7 @@
 package org.example;
 
+import org.code.Day01;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        try {
+            Day01.day1();
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
     }
 }
